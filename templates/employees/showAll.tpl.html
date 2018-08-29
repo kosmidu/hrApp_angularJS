@@ -1,0 +1,42 @@
+<div class="text-center">
+	<h1>Show All Employees</h1>
+
+	<p>{{ message }}</p>
+
+	<table class="table table-striped">
+		<thead style="font-weight: bold;">
+			<tr>
+				<th scope="col">#</th>
+				<td scope="col">First</td>
+				<td scope="col">Last</td>
+				<td scope="col">Department</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="employee in employees">
+				<th scope="row">{{ $index + 1 }}</th>
+				<td>{{employee.firstName}}</td>
+				<td>{{employee.lastName}}</td>
+				<td>{{employee.department.name}}</td>
+				<td>
+					<span class="table-more">
+						<button type="button" class="btn btn-primary btn-rounded btn-sm" ng-click="goTo(employee.id)">More</button>
+						<!-- <a href="/#/employees/details" class="button">More</a> -->
+					</span>
+				</td>
+				<td>
+					<span class="table-edit">
+						<button type="button" class="btn btn-info btn-rounded btn-sm" ng-click="toEdit(employee.id)">Edit</button>
+						<!-- <a href="/#/employees/details" class="button">More</a> -->
+					</span>
+				</td>
+				<td>
+					<span class="table-remove">
+						<button type="button" class="btn btn-danger btn-rounded btn-sm" ng-click="toRemove(employee.id)">Remove</button>
+						<!-- <a href="/#/employees/details" class="button">More</a> -->
+					</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

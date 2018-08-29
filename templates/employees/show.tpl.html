@@ -1,0 +1,62 @@
+<div class="text-center">
+    <h1>Show Employee</h1>
+
+    <p>{{ message }}</p>
+
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th scope="col">First name</th>
+                <td>{{employee.firstName}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Last name</th>
+                <td>{{employee.lastName}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Department</th>
+                <td>{{employee.department.name}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Email</th>
+                <td>{{employee.email}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Birth Date</th>
+                <td>{{employee.birthDate}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Join Date</th>
+                <td>{{employee.joinDate}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Salary</th>
+                <td>{{employee.salary}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Phone number</th>
+                <td>{{employee.phoneNumber}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Country</th>
+                <td>{{employee.address.country}}</td>
+            </tr>
+            <tr>
+                <th scope="col">City</th>
+                <td>{{employee.address.city}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Street</th>
+                <td>{{employee.address.street}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Street number</th>
+                <td>{{employee.address.streetNumber}}</td>
+            </tr>
+            <tr>
+                <th scope="col">Zip code</th>
+                <td>{{employee.address.zipCode}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

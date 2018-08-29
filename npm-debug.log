@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'eslint',
+1 verbose cli   '--save',
+1 verbose cli   '-dev' ]
+2 info using npm@3.5.2
+3 info using node@v6.11.4
+4 warn install Usage of the `--dev` option is deprecated. Use `--only=dev` instead.
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData eslint
+9 silly fetchNamedPackageData eslint
+10 silly mapToRegistry name eslint
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/eslint
+14 verbose request uri https://registry.npmjs.org/eslint
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 6:32:27 PM
+17 verbose request id 2b017d5042becea4
+18 verbose etag W/"624993bd0719792ee955d7b3ff3d3f98"
+19 verbose lastModified Sat, 04 Aug 2018 02:13:33 GMT
+20 http request GET https://registry.npmjs.org/eslint
+21 http 304 https://registry.npmjs.org/eslint
+22 verbose headers { date: 'Fri, 17 Aug 2018 15:32:27 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=d87530b7310f688054be6cbc4972c29521534519947; expires=Sat, 17-Aug-19 15:32:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'cf-ray': '44bd31887ce49df1-ATH',
+22 verbose headers   etag: '"624993bd0719792ee955d7b3ff3d3f98"',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'last-modified': 'Sat, 04 Aug 2018 02:13:33 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Fri, 17 Aug 2018 15:32:27 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=d87530b7310f688054be6cbc4972c29521534519947; expires=Sat, 17-Aug-19 15:32:27 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'cf-ray': '44bd31887ce49df1-ATH',
+23 silly get     etag: '"624993bd0719792ee955d7b3ff3d3f98"',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'last-modified': 'Sat, 04 Aug 2018 02:13:33 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/eslint from cache
+25 verbose get saving eslint to /home/maria/.npm/registry.npmjs.org/eslint/.cache.json
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Refusing to install eslint as a dependency of itself
+43 verbose stack     at checkSelf (/usr/share/npm/lib/install/validate-args.js:40:14)
+43 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+43 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+43 verbose stack     at chain (/usr/share/npm/node_modules/slide/lib/chain.js:20:5)
+43 verbose stack     at /usr/share/npm/lib/install/validate-args.js:15:5
+43 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+43 verbose stack     at Array.forEach (native)
+43 verbose stack     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+44 verbose cwd /home/maria/Documents/hr_app
+45 error Linux 4.13.0-46-generic
+46 error argv "/usr/bin/node" "/usr/bin/npm" "install" "eslint" "--save" "-dev"
+47 error node v6.11.4
+48 error npm  v3.5.2
+49 error code ENOSELF
+50 error Refusing to install eslint as a dependency of itself
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
